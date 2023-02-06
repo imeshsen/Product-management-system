@@ -1,0 +1,19 @@
+.Add{
+    background-color: rgb(72, 177, 170);
+    padding: 10%;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    color: aliceblue;
+    background-color: rgb(12, 47, 173);
+    border-style: none;
+}

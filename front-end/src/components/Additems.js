@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import "./Additems.css"
 
 export default function Additems() {
     const[name,setprname] = useState();
@@ -21,13 +22,13 @@ export default function Additems() {
     };
 
   return (
-    <div>
+    <div className='Add'>
 
-      <h1>Additems</h1>
+      <h1>Add new items</h1>
       <h4>Enter product name</h4>
       <input type={'text'} value={name} onChange={(e)=>setprname(e.target.value)} required></input>
       <h4>Enter product description</h4>
-      <input type={'text'} value={description} onChange={(e)=>setdescription(e.target.value)} required></input>
+      <input type={'text'} value={description} onChange={(e)=>setdescription(e.target.value)} required></input><br/>
       <button className="btnsubmit" onClick={handleclick}>Submit</button>
 
     </div>
